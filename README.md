@@ -9,6 +9,9 @@ Este proyecto consiste en resolver un reto de HTML y CSS dos veces, una utilizan
 ## Link pagina web publicada (Bootstrap)
 https://1jul.github.io/CSS-Frameworks-Bootstrap/
 
+## Link pagina web publicada (Tailwind)
+https://1jul.github.io/CSS-Frameworks-Tailwind/
+
 ## Contexto
 
 El reto de HTML y CSS implica crear una página web responsive utilizando diferentes frameworks de estilos. Las imágenes necesarias para el diseño se encuentran dentro de la carpeta `assets`, mientras que los diseños de la página están ubicados en la carpeta `design`.
