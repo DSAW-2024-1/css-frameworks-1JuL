@@ -4,63 +4,86 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Bootstrap Workshop</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-    <link href="./bootstrap.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./bootstrap.css"/>
   </head>
 
   <body>
-    <main>
-      <div class="card">  
-        <div class="overall_score">
-          <h1>Your Result</h1>
-          <p class="puntaje"><span>76</span> of 100</p>
-          
-          <div class="clasificacion">
-            <h2 class="rank">Great</h2>
-            <p>You scored higher than 65% of the people who have taken these tests.</p>
+    <div class="main-container">
+      <div class="container container-sm container-md"> <!-- Contenedor donde se encuentran las dos columnas. (Clases de acuerdo al responsive desing)  -->
+        <div class="row">
+
+          <div class="primera col-sm-6">  <!-- Primera Columna -->
+            <div class="first-blue-card"> <!-- Carta azul donde va el puntaje total -->
+              <p>Your Result</p>
+
+              <div class="circulo">       <!-- Circulo para el puntaje -->
+                <h1>76</h1>
+                <p>of 100</p>
+              </div>
+
+              <h5 class="great">Great</h5>
+              <p>
+                You scored higher than 65% of the people who have taken these
+                tests.
+              </p>
+              
+            </div>
           </div>
-          
+
+          <div class="segunda col-sm-6">  <!-- Segunda Columna -->
+            <div class="segunda-parte-puntajes">  <!-- Parte blanca donde van los puntajes individuales por categoria  -->
+              <h5><span>Summary</span></h5>
+
+              <div class="puntaje reaccion">
+                <div class="texto">
+                  <p class="color-texto">
+                    <img src="../assets/images/icon-reaction.svg" alt="reaction icon"/>
+                    Reaction
+                  </p>
+                  <p><span>80 </span>/ 100</p>
+                </div>
+              </div>
+
+              <div class="puntaje memoria">
+                <div class="texto">
+                  <p class="color-texto">
+                    <img src="../assets/images/icon-memory.svg" alt="memory icon" />
+                    Memory
+                  </p>
+                  <p><span>92 </span>/ 100</p>
+                </div>
+              </div>
+
+              <div class="puntaje verbal">
+                <div class="texto">
+                  <p class="color-texto">
+                    <img src="../assets/images/icon-verbal.svg" alt="verbal icon" /> 
+                    Verbal
+                  </p>
+                  <p><span>61 </span>/ 100</p>
+                </div>
+              </div>
+
+              <div class="puntaje visual">
+                <div class="texto">
+                  <p class="color-texto">
+                    <img src="../assets/images/icon-visual.svg" alt="visual icon" /> 
+                    Visual
+                  </p>
+                  <p><span>72 </span>/ 100</p>
+                </div>
+              </div>
+
+              <div class="d-grid gap-2">
+                <button><a class="button-link" href="#">Continue</a></button>
+              </div>
+
+            </div>
+          </div>
         </div>
-
-
-        <div class="second-content">
-          <h2>Summary</h2>
-          <div class="content reaction">
-              <div class="position-text">
-                  <p class="content-color"><img src="../assets/images/icon-reaction.svg" alt="reaction"> Reaction</p> <p><span>80 </span>/ 100</p>
-              </div>
-          </div>
-
-          <div class="content memory">
-              <div class="position-text">
-                  <p class="content-color"><img src="../assets/images/icon-memory.svg" alt=" memory"> Memory</p> <p><span>92 </span>/ 100</p>
-              </div>
-          </div>
-
-          <div class="content verbal">
-              <div class="position-text">
-                  <p class="content-color"><img src="../assets/images/icon-verbal.svg" alt=""> Verbal</p> <p><span>61 </span>/ 100</p>
-              </div>
-          </div>
-
-          <div class="content visual">
-              <div class="position-text">
-                  <p class="content-color"><img src="../assets/images/icon-visual.svg" alt=""> Visual</p> <p><span>72 </span>/ 100</p>
-              </div>
-          </div>
-          
-          <div class="d-grid gap-2">
-              <button class="button">Continue</button>
-          </div>
       </div>
-
-      </div>
-    </main>
+    </div>
 
     <!-- No elimine este tag -->
     <script
