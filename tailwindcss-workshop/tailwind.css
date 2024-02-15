@@ -162,6 +162,10 @@ span.sub-title{font-size: large;}
     margin-top: 200px;
   }
 
+  .container2{
+    display: inline-flex;
+  }
+
   .primera{
     max-width: 600px;
     width: 350px;
